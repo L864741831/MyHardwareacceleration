@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edu.hardwareacceleration.myhardwareacceleration">
+
+    <!--
+    在Android清单文件中，将以下属性添加到 标记以为整个应用程序启用硬件加速
+    android：hardwareAccelerated = “true”
+
+    自定义view绘图最好关闭硬件加速
+
+如果您的应用程序在全局启用硬件加速时行为不正常，您也可以针对各个活动控制它。
+要在活动级别启用或禁用硬件加速，可以使用android:hardwareAccelerated该元素的属性。
+    <activity android:hardwareAccelerated="false" />
+    -->
+
+    <application
+        android:hardwareAccelerated="false"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
